@@ -18,8 +18,8 @@
 
     window.socket.sendCanvas = function(fps) {
         var cvn = document.getElementById('hydra_canvas');
-        var shader64Str = cvn.toDataURL('image/jpeg');
-        window.socket.emit('canvas', shader64Str);
+        var base64Str = cvn.toDataURL('image/jpeg');
+        window.socket.emit('canvas', base64Str);
         if (timer) clearInterval(timer);
         timer = setInterval(window.socket.sendCanvas, 1000 / fps, fps);
         return;
