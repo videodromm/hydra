@@ -222,6 +222,7 @@ function findParentTweet(sketch_id, callback) {
 
 app.get('/bundle.js', browserify(path.join(__dirname, '/app/index.js')))
 app.get('/camera-bundle.js', browserify(path.join(__dirname, '/app/camera.js')))
+
 // crear un servidor en puerto 8000
 server.listen(8000, function () {
   // imprimir la direccion ip en la consola
