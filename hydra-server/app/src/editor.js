@@ -51,6 +51,9 @@ var EditorClass = function () {
       'Shift-Ctrl-E': function (instance) {
         wssend()
       },
+      'Alt-S': function (instance) {
+        webrtcsend()
+      },
       'Alt-Enter': (instance) => {
         var text = self.selectCurrentBlock(instance)
         console.log('text', text)
